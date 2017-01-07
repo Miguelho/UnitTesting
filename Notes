@@ -1,0 +1,23 @@
+Un System Under Test (SUT) es un test relacionado con una única responsabilidad de una única clase.
+
+El objetivo de los test unitarios es hacer que el código del SUT funcione.
+
+Un SUT normalmente tiene otros objetos con los que mantiene una conversación, los colaboradores. Estos colaboradores tienen que crearse para que puedan asignarse al SUT.
+
+Para que los test sean más sencillos y poder tener el control sobre el contexto de ejecución, se sustituyen los colaboradores por sustitutos llamados test doubles.
+
+Un test double es una representación de un colaborador al cual se le aisla de sus otros colaboradores. Y pueden ser programados con comportamientos esperados.
+
+La tipología de los test doubles puede dividirse en 5 grupos:
+
+Spy: es un mock que actúa de proxy sobre un objeto existente real, algunos métodos pueden stubbearse mientras otros se redirigen al objeto original.
+
+Mock: un objeto que puede programarse para un comportamiento predeterminado, y que puede verificar las interacciones a lo largo de su vida.
+
+Stub: un objeto con un comportamiento hardcodeado ideal para un test o grupo de tests.
+
+Fake: un objeto que tiene una implementación funcional simplificada para satisfacer el test
+
+Dummy: un objeto vació para pasar en una invocación. Normalmente para satisfacer al compilador cuando un argumento es necesario.
+
+Un framework de mocking es de mucha ayuda a la hora de crear mocks y espías de manera sencilla e intuitiva proveyendo de control en el proceso.
