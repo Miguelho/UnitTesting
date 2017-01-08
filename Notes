@@ -21,3 +21,12 @@ Fake: un objeto que tiene una implementación funcional simplificada para satisfa
 Dummy: un objeto vació para pasar en una invocación. Normalmente para satisfacer al compilador cuando un argumento es necesario.
 
 Un framework de mocking es de mucha ayuda a la hora de crear mocks y espías de manera sencilla e intuitiva proveyendo de control en el proceso.
+
+Stubbing del retorno de un método es la conjunción when().thenReturn(), que define como un método mock debe comportarse.
+
+
+Limitaciones:
+
+Mockito no puede mockear: clases finales, enums, métodos finales, métodos estáticos, métodos privados, los métodos de Object hashCode y equals.
+
+Si estuviésemos trabajando con código legado, PowerMock o JMockit nos hacen el trabajo sucio.

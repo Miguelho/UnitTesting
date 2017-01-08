@@ -50,7 +50,12 @@ public class ServiceClassTest {
 		
 	}
 }
-
+/**
+ * 
+ * if you call MockitoAnnotations.initMocks(this) in a super class constructor then this will not work. 
+ * It is because fields in subclass are only instantiated after super class constructor has returned. 
+ * It's better to use @Before or a ShuntedClass
+ * */
 class ShuntedConcreteClass extends ConcreteClass{
 		
 	public ShuntedConcreteClass(){

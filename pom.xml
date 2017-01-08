@@ -10,6 +10,7 @@
   <modules>
   	<module>DZoneMockitoRefcard</module>
   	<module>MyExample</module>
+  	<module>SpringTesting</module>
   </modules>
   
   
